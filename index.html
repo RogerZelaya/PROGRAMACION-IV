@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Primer Examen Pacial </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+      
+      <div class="bg-info clearfix">
+        <div class="card-body">
+            <h2 class="card-title">Bienvenidos Escritores</h2>
+            <a href="#" data-form="reg" class="show px-4 py-2 mr-2 text-black-500 font-semibold">Registro de Autores</a>
+            <a href="#" data-form="lib" class="show px-4 py-2 mr-2 text-black-500 font-semibold">Registro de libros</a>
+
+          </div>
+      </div>
+
+    <div id="app" class="grid grid-cols-1 gap-4">
+        <reg ref="reg" v-show="forms['reg'].show"></reg>
+        <lib ref="lib" v-show="forms['lib'].show"></lib>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="autor.js"></script>
+    <script src="main.js"></script>
+    <script src="libros.js"></script>
+    
+</body>
+</html>
